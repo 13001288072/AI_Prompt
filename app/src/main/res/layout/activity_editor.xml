@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F7F5FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="创建你的专属提示词 ✨"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#2D2350"
+            android:layout_marginTop="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="填写需求，定制 AI 的回答方式"
+            android:textSize="15sp"
+            android:textColor="#777088"
+            android:layout_marginTop="12dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="你想让 AI 帮你做什么？"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#2D2350"
+            android:layout_marginTop="36dp" />
+
+        <EditText
+            android:id="@+id/etQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="例如：帮我理解冒泡排序……"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:padding="16dp"
+            android:textSize="15sp"
+            android:backgroundTint="#6750A4"
+            android:layout_marginTop="12dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择任务类型"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#2D2350"
+            android:layout_marginTop="28dp" />
+
+        <Spinner
+            android:id="@+id/spTaskType"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择回答风格"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#2D2350"
+            android:layout_marginTop="28dp" />
+
+        <RadioGroup
+            android:id="@+id/rgStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:checkedButton="@id/rbDetailed">
+
+        <RadioButton
+            android:id="@+id/rbDetailed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细讲解"
+            android:textSize="15sp"
+            android:buttonTint="#6750A4" />
+
+        <RadioButton
+            android:id="@+id/rbConcise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简洁回答"
+            android:textSize="15sp"
+            android:buttonTint="#6750A4" />
+
+        <RadioButton
+            android:id="@+id/rbProfessional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专业正式"
+            android:textSize="15sp"
+            android:buttonTint="#6750A4" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -43,7 +43,7 @@
 
     <Button
         android:id="@+id/btnStart"
-        android:layout_width="match_parent"
+        android:layout_width="240dp"
         android:layout_height="56dp"
         android:text="开始创作"
         android:textSize="17sp"
