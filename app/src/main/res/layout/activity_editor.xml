@@ -12,6 +12,7 @@
         android:orientation="vertical"
         android:padding="24dp">
 
+        <!-- 页面标题 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,6 +22,7 @@
             android:textColor="#2D2350"
             android:layout_marginTop="48dp" />
 
+        <!-- 页面副标题 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,7 +31,7 @@
             android:textColor="#777088"
             android:layout_marginTop="12dp" />
 
-
+        <!-- 需求输入区域 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,7 +53,7 @@
             android:backgroundTint="#6750A4"
             android:layout_marginTop="12dp" />
 
-
+        <!-- 任务类型 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -68,7 +70,7 @@
             android:layout_marginTop="8dp"
             android:padding="8dp" />
 
-
+        <!-- 回答风格 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -86,29 +88,79 @@
             android:layout_marginTop="8dp"
             android:checkedButton="@id/rbDetailed">
 
-        <RadioButton
-            android:id="@+id/rbDetailed"
-            android:layout_width="wrap_content"
+            <RadioButton
+                android:id="@+id/rbDetailed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="详细讲解"
+                android:textSize="15sp"
+                android:buttonTint="#6750A4" />
+
+            <RadioButton
+                android:id="@+id/rbConcise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="简洁回答"
+                android:textSize="15sp"
+                android:buttonTint="#6750A4" />
+
+            <RadioButton
+                android:id="@+id/rbProfessional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="专业正式"
+                android:textSize="15sp"
+                android:buttonTint="#6750A4" />
+
+        </RadioGroup>
+
+        <!-- 附加要求 -->
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="详细讲解"
+            android:text="附加要求（可多选）"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#2D2350"
+            android:layout_marginTop="28dp" />
+
+        <CheckBox
+            android:id="@+id/cbExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="举例说明"
+            android:textSize="15sp"
+            android:buttonTint="#6750A4"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/cbSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="分步骤回答"
             android:textSize="15sp"
             android:buttonTint="#6750A4" />
 
-        <RadioButton
-            android:id="@+id/rbConcise"
-            android:layout_width="wrap_content"
+        <CheckBox
+            android:id="@+id/cbTable"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="简洁回答"
+            android:text="使用表格整理"
             android:textSize="15sp"
             android:buttonTint="#6750A4" />
 
-        <RadioButton
-            android:id="@+id/rbProfessional"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="专业正式"
-            android:textSize="15sp"
-            android:buttonTint="#6750A4" />
+        <!-- 生成按钮 -->
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="✨ 生成提示词"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6750A4"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp" />
 
     </LinearLayout>
 
