@@ -51,4 +51,13 @@
         android:layout_marginTop="40dp"
         android:backgroundTint="#6750A4" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名：范方忆    学号：2406100106"
+        android:textSize="13sp"
+        android:textColor="#777088"
+        android:layout_marginTop="28dp" />
+
+
 </LinearLayout>

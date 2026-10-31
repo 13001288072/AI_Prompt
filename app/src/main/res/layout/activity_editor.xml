@@ -31,6 +31,17 @@
             android:textColor="#777088"
             android:layout_marginTop="12dp" />
 
+
+        <!-- 作者信息：固定显示，不可编辑 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="姓名：范方忆    学号：2406100106"
+            android:textSize="13sp"
+            android:textColor="#777088"
+            android:layout_marginTop="16dp" />
+
+
         <!-- 需求输入区域 -->
         <TextView
             android:layout_width="match_parent"

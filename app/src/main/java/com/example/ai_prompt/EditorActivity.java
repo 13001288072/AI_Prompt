@@ -15,6 +15,7 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.CheckBox;
 import android.widget.Toast;
+import android.content.Intent;
 
 public class EditorActivity extends AppCompatActivity {
 
@@ -125,7 +126,9 @@ public class EditorActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT
             ).show();
 
-            // 下一阶段：通过 Intent 把 prompt 传给 ResultActivity
+            Intent intent = new Intent(EditorActivity.this, ResultActivity.class);
+            intent.putExtra("prompt", prompt.toString());
+            startActivity(intent);
         });
 
 

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F7F5FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- 页面标题 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✨ 提示词已生成"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#2D2350"
+            android:layout_marginTop="36dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="复制下面的内容，即可在 AI 工具中使用"
+            android:textSize="14sp"
+            android:textColor="#777088"
+            android:layout_marginTop="12dp" />
+
+
+        <!-- 作者信息：固定显示，不可编辑 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="姓名：范方忆    学号：2406100106"
+            android:textSize="13sp"
+            android:textColor="#777088"
+            android:layout_marginTop="16dp" />
+
+
+        <!-- 生成结果 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="你的专属提示词"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#2D2350"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="180dp"
+            android:padding="16dp"
+            android:text="生成的提示词将在这里显示"
+            android:textSize="15sp"
+            android:textColor="#2D2350"
+            android:background="#FFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <!-- 复制按钮 -->
+        <Button
+            android:id="@+id/btnCopy"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="复制提示词"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6750A4"
+            android:layout_marginTop="20dp" />
+
+        <!-- 示例模板 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="灵感模板"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#2D2350"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击模板可查看示例提示词"
+            android:textSize="13sp"
+            android:textColor="#777088"
+            android:layout_marginTop="8dp" />
+
+        <ListView
+            android:id="@+id/lvTemplates"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:dividerHeight="1dp" />
+
+        <!-- 返回按钮 -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="返回继续创作"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:backgroundTint="#8875B5"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+
+</ScrollView>
